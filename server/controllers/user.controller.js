@@ -1,7 +1,8 @@
 const User = require('../models/user')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const SECRET = process.env.SECRET_KEY
+// const SECRET = process.env.SECRET_KEY
+const SECRET = 'asdgerg34t53tg34ntgn#$%'
 module.exports = {
 
     registerUser: async (req, res) => {

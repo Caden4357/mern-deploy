@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken')
-const SECRET = process.env.SECRET_KEY
+// const SECRET = process.env.SECRET_KEY
+const SECRET = 'asdgerg34t53tg34ntgn#$%'
 
 
 module.exports.authenticate = (req, res, next) => {
@@ -8,7 +9,7 @@ module.exports.authenticate = (req, res, next) => {
             res.status(401).json({verified: false})
         }
         else{
-            console.log('Authenticated')
+            // console.log('Authenticated')
             next()
         }
     })
